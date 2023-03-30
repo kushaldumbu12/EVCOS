@@ -1,0 +1,73 @@
+ody {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    color: #bee4ca;
+}
+html { 
+    background: url(/images/fast.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+@font-face {
+    font-family: peace_sans;
+    src: url(Peace\ Sans.otf);
+    font-weight: bold;
+  }
+   header {
+    background-color:rgb(3, 63, 43);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:20px;
+    position: sticky;
+    top: 0;
+    box-shadow:0 5px 10px rgba(20, 109, 60, 0.6);
+    z-index: 1;
+	  height: 50px;
+    margin-top: -20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav li {
+    margin-left: 20px;
+}
+nav li:not(#profile)
+{
+    margin-top: 20px;
+}
+#profile{
+    vertical-align: top;
+    margin-top: -10px;
+}
+nav a {
+    color: #bee4ca;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0px 10px 20px;
+    border-radius: 10%;
+}
+nav a:hover:not(#profile):not(#logout){
+    background-color: #15944ab9;
+    box-shadow: 0 2px 5px rgba(45, 161, 55, 0.61);
+}
+#logout{
+    margin-left: -30px;
+    margin-right: 40px;
+}
+
+
+
+footer {
+	background-color: rgb(3, 63, 43);
+    z-index: 1;
+	color: #bee4ca;
+	padding: 10px;
+	text-align: center;
+}

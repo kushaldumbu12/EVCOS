@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN Page</title>
+    <link rel="stylesheet" type="text/css" href="login-page.css">
+    <script type="text/javascript">
+        function chklogin(uname,pwd)
+{
+if(uname=="" && pwd=="")
+alert("uname and password should not be empty");
+else if(uname=="")
+alert("Please Enter USN");
+else if(pwd=="")
+alert("Please enter password");
+else if(uname=="kushal" && pwd=="12345678" )
+{
+alert("Login Success");
+open("profile.html");
+}
+else
+alert("wrong details");
+}
+    </script>
+</head>
+<body>
+    <div id="a-body">
+        <header>
+            <div class="logo">
+                <img src="images/brand.png" alt="Company Logo" width="30px" height="30px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="login-page.html" id="profile"><div id="menu-bar1-profile-logo-top"></div>
+                        <div id="menu-bar1-profile-logo-bottom"></div></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="body-center">
+            <div class="login-form">
+                <form class="slogin" action="login.html" method="POST">
+                    <h2 style="margin: -20px 20px; font-size:30px">LOG IN</h2>
+                    <div style="margin: 50px 0px 0px 20px;font-size:18px"><b>Username&nbsp;:</b></div>
+                    <center>
+                        <input type="text"id="username"placeholder="Enter Username" name="uname"><br>
+                    </center>
+                    <div style="margin: 20px 0px 0px 20px;font-size:18px"><b>Password&nbsp;:</b></div>
+                    <center>
+                            <input type="password" id="password" placeholder="Enter Password" name="pwd"><br><br>
+                    </center>
+                            <input type="checkbox" value="remember-me" style="margin-left: 15px;">remember me<br><br>
+                    <center>
+                            <input type="submit" id="login-btn" value="LOG IN" name="login" onclick="chklogin(uname.value,pwd.value)" target="main">
+                            <style>
+                                #login-btn:hover{
+                                    background-color: rgba(37, 221, 31, 0.986);
+                                }
+                            </style>
+                    </center>
+                </form>
+                    <center>
+                     <p style="color:rgba(255, 255, 255, 0.853)"><br>do not have an account?&nbsp; <a href="/sign-up.html"  id="sign-up-link" style="color:rgb(25, 180, 48)">sign-up</a></p>
+                    </center>
+                    
+                    </style>
+                    </form>
+                    </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Electric Vehicle Charging Assistant</p>
+    </footer>
+</body>
+</html>
